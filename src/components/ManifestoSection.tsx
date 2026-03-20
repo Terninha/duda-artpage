@@ -33,12 +33,12 @@ export default function ManifestoSection() {
     <section
       id="manifesto"
       ref={sectionRef}
-      className="py-40 flex items-center justify-center px-5"
+      className="py-40 flex items-center justify-center px-5 bg-[#E4CAFF]"
     >
       <div className="max-w-[900px] mx-auto text-center">
         {/* Label */}
         <span
-          className="inline-block font-sans font-medium text-[10px] uppercase tracking-[0.25em] text-accent mb-10"
+          className="inline-block font-sans font-medium text-[10px] uppercase tracking-[0.25em] text-[#0f0f0e] mb-10"
           style={{
             opacity: isVisible ? 1 : 0,
             transform: isVisible ? "translateY(0)" : "translateY(16px)",

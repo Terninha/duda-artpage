@@ -69,11 +69,11 @@ function DirectionalButton({
       href={href}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className="relative flex items-center gap-3 rounded-full px-6 py-3 border border-white/25 font-sans text-sm text-text-primary overflow-hidden active:scale-[0.97] transition-transform duration-150"
+      className="relative flex items-center gap-3 rounded-full px-6 py-3 bg-[#E4CAFF] border border-[#E4CAFF] font-sans text-sm text-[#0f0f0e] overflow-hidden active:scale-[0.97] transition-transform duration-150"
     >
       {/* Directional fill overlay */}
       <span
-        className="absolute inset-0 bg-text-primary rounded-full"
+        className="absolute inset-0 bg-[#D6B8FC] rounded-full"
         style={{
           transform: hovered ? transform.final : transform.initial,
           transition: "transform 500ms cubic-bezier(0.32, 0.72, 0, 1)",
@@ -81,21 +81,21 @@ function DirectionalButton({
       />
       <span
         className={`relative z-10 transition-colors duration-500 ease-expo ${
-          hovered ? "text-bg" : "text-text-primary"
+          hovered ? "text-[#0f0f0e]" : "text-[#0f0f0e]"
         }`}
       >
         {children}
       </span>
       <span
         className={`relative z-10 w-7 h-7 rounded-full flex items-center justify-center transition-colors duration-500 ease-expo ${
-          hovered ? "bg-bg/20" : "bg-white/10"
+          hovered ? "bg-black/10" : "bg-black/8"
         }`}
       >
         <ArrowUpRight
           size={14}
           weight="light"
           className={`transition-colors duration-500 ease-expo ${
-            hovered ? "text-bg" : "text-text-primary"
+            hovered ? "text-[#0f0f0e]" : "text-[#0f0f0e]"
           }`}
         />
       </span>
@@ -107,7 +107,7 @@ export default function HeroSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative min-h-[100dvh] overflow-hidden">
+    <section className="relative min-h-[100dvh] overflow-hidden bg-[#FAFAF8]">
       {/* Absolutely positioned hero image — bleeds off right edge */}
       <motion.div
         className="absolute top-0 right-0 h-full hidden md:block"
@@ -120,7 +120,7 @@ export default function HeroSection() {
         <div
           className="absolute inset-0 z-10 pointer-events-none"
           style={{
-            background: "linear-gradient(to right, #0c0c0b 0%, transparent 45%)",
+            background: "linear-gradient(to right, #FAFAF8 0%, transparent 45%)",
           }}
         />
 
@@ -128,7 +128,7 @@ export default function HeroSection() {
         <div
           className="absolute inset-0 z-10 pointer-events-none"
           style={{
-            background: "linear-gradient(to top, #0c0c0b 0%, transparent 35%)",
+            background: "linear-gradient(to top, #FAFAF8 0%, transparent 35%)",
           }}
         />
 
@@ -136,7 +136,7 @@ export default function HeroSection() {
         <div
           className="absolute inset-0 z-10 pointer-events-none"
           style={{
-            background: "linear-gradient(to bottom, #0c0c0b 0%, transparent 20%)",
+            background: "linear-gradient(to bottom, #FAFAF8 0%, transparent 20%)",
           }}
         />
 
@@ -162,7 +162,7 @@ export default function HeroSection() {
         >
           {/* Eyebrow pill badge */}
           <motion.div variants={itemVariants}>
-            <span className="inline-block font-sans font-medium text-[10px] uppercase tracking-[0.2em] text-text-secondary border border-white/[0.15] rounded-full px-3 py-1">
+            <span className="inline-block font-sans font-medium text-[10px] uppercase tracking-[0.2em] text-text-secondary border border-black/10 rounded-full px-3 py-1">
               {t.hero_tag}
             </span>
           </motion.div>

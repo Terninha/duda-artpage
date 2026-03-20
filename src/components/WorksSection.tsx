@@ -94,9 +94,9 @@ const WorkCard = memo(function WorkCard({
       className="group block"
     >
       {/* Double-Bezel: Outer Shell */}
-      <div className="bg-white/[0.03] border border-white/[0.08] p-1.5 rounded-[2rem]">
+      <div className="bg-[#E4CAFF]/20 border border-[#E4CAFF]/40 p-1.5 rounded-[2rem]">
         {/* Double-Bezel: Inner Core */}
-        <div className="bg-surface-elevated shadow-[inset_0_1px_1px_rgba(255,255,255,0.06)] rounded-[calc(2rem-0.375rem)] overflow-hidden">
+        <div className="bg-[#F2E8FF] shadow-[inset_0_1px_1px_rgba(0,0,0,0.05)] rounded-[calc(2rem-0.375rem)] overflow-hidden">
           {/* Image container with variable aspect ratio */}
           <div
             className="relative overflow-hidden rounded-[4px]"
@@ -111,13 +111,13 @@ const WorkCard = memo(function WorkCard({
 
             {/* Hover overlay */}
             <div
-              className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 flex items-center justify-center"
+              className="absolute inset-0 bg-black/15 opacity-0 group-hover:opacity-100 flex items-center justify-center"
               style={{
                 transition: "opacity 500ms cubic-bezier(0.32, 0.72, 0, 1)",
               }}
             >
               <span
-                className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100"
+                className="w-12 h-12 rounded-full bg-black/8 flex items-center justify-center scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100"
                 style={{
                   transition:
                     "transform 600ms cubic-bezier(0.32, 0.72, 0, 1) 100ms, opacity 400ms cubic-bezier(0.32, 0.72, 0, 1) 100ms",
@@ -156,7 +156,7 @@ export default function WorksSection() {
   const tRecord = t as Record<string, string>;
 
   return (
-    <section id="works" className="py-32 px-5 md:px-10">
+    <section id="works" className="py-32 px-5 md:px-10 bg-[#FAFAF8]">
       <div className="max-w-[1400px] mx-auto">
         {/* Section header */}
         <div className="mb-16">

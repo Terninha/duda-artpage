@@ -10,12 +10,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "#0c0c0b",
-        surface: "#131312",
-        "surface-elevated": "#1a1918",
-        "text-primary": "#ede9e0",
-        "text-secondary": "#7a7670",
-        accent: "#b8a898",
+        bg: "#FAFAF8",
+        surface: "#F2E8FF",
+        "surface-elevated": "#EAD9FF",
+        "text-primary": "#0f0f0e",
+        "text-secondary": "#3d2a5a",
+        accent: "#E4CAFF",
       },
       fontFamily: {
         serif: ["var(--font-cormorant)", "Georgia", "serif"],

@@ -41,7 +41,7 @@ export default function CTASection() {
   }, [x, y]);
 
   return (
-    <section className="min-h-[40vh] flex items-center justify-center px-5 py-32">
+    <section className="min-h-[40vh] flex items-center justify-center px-5 py-32 bg-[#E4CAFF]">
       <motion.div
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -70,10 +70,10 @@ export default function CTASection() {
           }}
           whileTap={{ scale: 0.97 }}
           transition={{ type: "spring", stiffness: 200, damping: 20 }}
-          className="group/cta inline-flex items-center gap-3 rounded-full px-8 py-4 border border-text-primary font-sans text-sm text-text-primary hover:bg-text-primary hover:text-bg transition-colors duration-500 ease-expo"
+          className="group/cta inline-flex items-center gap-3 rounded-full px-8 py-4 bg-[#0f0f0e] border border-[#0f0f0e] font-sans text-sm text-[#FAFAF8] hover:bg-[#3d2a5a] hover:border-[#3d2a5a] hover:text-[#FAFAF8] transition-colors duration-500 ease-expo"
         >
           <span>{t.cta_button}</span>
-          <span className="w-7 h-7 rounded-full bg-white/10 group-hover/cta:bg-bg/20 flex items-center justify-center transition-colors duration-500 ease-expo">
+          <span className="w-7 h-7 rounded-full bg-[#FAFAF8]/20 group-hover/cta:bg-[#FAFAF8]/20 flex items-center justify-center transition-colors duration-500 ease-expo">
             <ArrowUpRight size={14} weight="light" />
           </span>
         </motion.a>

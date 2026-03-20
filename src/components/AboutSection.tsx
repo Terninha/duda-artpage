@@ -24,7 +24,7 @@ export default function AboutSection() {
   const { t } = useLanguage();
 
   return (
-    <section id="about" className="py-32 px-5 md:px-10">
+    <section id="about" className="py-32 px-5 md:px-10 bg-[#FAFAF8]">
       <div className="max-w-[1400px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-24">
           {/* Left column */}
@@ -72,7 +72,7 @@ export default function AboutSection() {
 
           {/* Right column: vertical thin rule — breathing space */}
           <div className="hidden md:flex justify-start">
-            <div className="border-l border-white/5 h-full" />
+            <div className="border-l border-black/10 h-full" />
           </div>
         </div>
       </div>

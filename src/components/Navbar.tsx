@@ -40,7 +40,7 @@ export default function Navbar() {
     <>
       {/* Floating Pill Nav */}
       <nav className="fixed top-0 left-0 right-0 z-40 mt-6 flex justify-center px-5">
-        <div className="flex items-center gap-6 h-[60px] rounded-full backdrop-blur-md bg-white/5 border border-white/[0.08] px-6 w-max">
+        <div className="flex items-center gap-6 h-[60px] rounded-full backdrop-blur-md bg-[#FAFAF8] border border-black/10 px-6 w-max">
           {/* Left: Name */}
           <a
             href="#"
@@ -76,7 +76,7 @@ export default function Navbar() {
             className="hidden md:flex items-center gap-2 text-xs font-sans font-medium text-text-secondary hover:text-text-primary transition-colors duration-300 ease-expo whitespace-nowrap"
           >
             <span>{t.nav_instagram}</span>
-            <span className="w-6 h-6 rounded-full bg-white/10 flex items-center justify-center">
+            <span className="w-6 h-6 rounded-full bg-black/8 flex items-center justify-center">
               <ArrowUpRight size={12} weight="light" />
             </span>
           </a>
@@ -115,7 +115,7 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4, ease: [0.32, 0.72, 0, 1] }}
-            className="fixed inset-0 z-30 backdrop-blur-3xl bg-black/85 flex flex-col items-center justify-center gap-8"
+            className="fixed inset-0 z-30 backdrop-blur-3xl bg-[#FAFAF8]/90 flex flex-col items-center justify-center gap-8"
           >
             {/* Language switcher in mobile overlay */}
             <div className="flex items-center gap-3 mb-8">
@@ -175,7 +175,7 @@ export default function Navbar() {
               className="flex items-center gap-3 text-text-secondary font-sans text-sm mt-4"
             >
               <span>{t.nav_instagram}</span>
-              <span className="w-7 h-7 rounded-full bg-white/10 flex items-center justify-center">
+              <span className="w-7 h-7 rounded-full bg-black/8 flex items-center justify-center">
                 <ArrowUpRight size={14} weight="light" />
               </span>
             </motion.a>
