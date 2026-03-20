@@ -40,7 +40,7 @@ export default function Navbar() {
     <>
       {/* Floating Pill Nav */}
       <nav className="fixed top-0 left-0 right-0 z-40 mt-6 flex justify-center px-5">
-        <div className="flex items-center gap-6 h-[60px] rounded-full backdrop-blur-md bg-[#FAFAF8] border border-black/10 px-6 w-max">
+        <div className="flex items-center gap-6 h-[60px] rounded-full bg-white/60 backdrop-blur-md border border-black/8 px-6 w-max">
           {/* Left: Name */}
           <a
             href="#"
